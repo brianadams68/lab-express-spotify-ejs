@@ -1,0 +1,83 @@
+/*Home EJS*/
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/spotify-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  width: 500px;
+  height: 220px;
+  background-color: white;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+label button {
+  padding: 5px 10px;
+  background-color: orangered;
+}
+
+/*Artist Search EJS*/
+
+.artist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+
+.container2 img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.H2andButton {
+  padding: 15px 80px 15px 80px;
+  background-color: rgb(77, 77, 77);
+}
+
+.container2 h2 {
+  font-size: 20px;
+}
+
+.container2 a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+/*Albums View EJS*/
+
+.albums-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

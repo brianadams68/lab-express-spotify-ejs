@@ -1,0 +1,17 @@
+<ul>
+  <% tracks.forEach(track => { %>
+  <li>
+    <div>
+      <h4><%= track.name %></h4>
+      <p><%= track.artists[0].name %></p>
+    </div>
+    <% if (track.preview_url) { %>
+    <audio controls="controls">
+      <source src="<%= track.preview_url %>" type="audio/mp3">
+    </audio>
+    <% } else { %>
+    <p>No preview available</p>
+    <% } %>
+  </li>
+  <% }) %>
+</ul>
