@@ -50,10 +50,20 @@ app.get("/albums/:artistId", (req, res) => {
   });
 });
 
-app.get("/albums/:albumId/tracks", (req, res) => {
-  spotifyApi.getAlbumTracks(req.params.albumId).then((data) => {
-    res.render("tracks", { tracks: data.body.items });
-  });
+app.get("/:name/:albumId", (request, response) => {
+  const name = request.params.name;
+  const albumId = request.params.albumId;
+
+  spotifyApi
+    .getAlbumTracks(albumId)
+    .then((data) => {
+      const tracks = data.body.items;
+      console.log(tracks);
+      response.render("tracks", { tracks });
+    })
+    .catch((error) => {
+      console.log("There has been an error", error);
+    });
 });
 
 app.listen(3000, () =>

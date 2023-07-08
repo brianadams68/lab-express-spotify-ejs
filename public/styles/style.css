@@ -81,3 +81,19 @@ label button {
   align-items: center;
   gap: 20px;
 }
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+
+.albums-container a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: orangered;
+}
