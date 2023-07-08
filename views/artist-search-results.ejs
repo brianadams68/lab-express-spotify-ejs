@@ -1,6 +1,6 @@
 <div class="artist-container">
   <% if (artists.length > 0) { %>
-  <% artists.slice(0, 6).forEach(artist => { %>
+  <% artists.forEach(artist => { %>
   <div class="container2">
     <% if (artist.images.length > 0) { %>
     <img src="<%= artist.images[0].url %>" alt="<%= artist.name %>">

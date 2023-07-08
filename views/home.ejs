@@ -1,10 +1,14 @@
-<div class="container">
-  <form action="/artist-search-results" method="GET">
-    <label for="artist">
-      <input type="text" name="artist" id="artist">
-    </label>
-    <label for="search-button">
-      <button>Search for Artist</button>
-    </label>
+<div id="cover">
+  <form method="GET" action="/artist-search-results">
+    <div class="tb">
+      <div class="td"><input type="text" placeholder="Search" name="artist" id="artist"></div>
+      <div class="td" id="s-cover">
+        <button type="submit">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </form>
 </div>
+
