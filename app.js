@@ -58,7 +58,6 @@ app.get("/:name/:albumId", (request, response) => {
     .getAlbumTracks(albumId)
     .then((data) => {
       const tracks = data.body.items;
-      console.log(tracks);
       response.render("tracks", { tracks });
     })
     .catch((error) => {

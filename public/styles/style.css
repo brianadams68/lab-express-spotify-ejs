@@ -3,11 +3,17 @@
   outline: none;
 }
 
+html,
 body {
   margin: 0;
   height: 100%;
-  min-height: 100%;
-  background-image: url(/images/spotify-background.jpeg);
+}
+
+body {
+  background-image: url(/images/cubeSpotify.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .tb {
@@ -35,18 +41,13 @@ button {
   top: 50%;
   left: 0;
   right: 0;
-  width: 750px;
+  width: 950px;
   padding: 25px;
   margin: -83px auto 0 auto;
-  background-color: #853838;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px #853838, 0 0 0 20px #ffffffeb;
+  background-color: #52735b;
+  border-radius: 70px;
+  box-shadow: 0 10px 40px #52735b, 0 0 0 20px rgba(255, 255, 255, 0.92);
   transform: scale(0.6);
-}
-
-form {
-  height: 96px;
-  background-color: transparent;
 }
 
 input[type="text"] {
@@ -183,7 +184,7 @@ button span:after {
 
 .H2andButton {
   padding: 15px 80px;
-  background-color: rgb(77, 77, 77);
+  background-color: #52735b;
 }
 
 .container2 h2 {
@@ -196,7 +197,7 @@ button span:after {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;
-  background-color: orangered;
+  background-color: #4ca64c;
 }
 
 /*Albums View EJS*/
